@@ -1,0 +1,17 @@
+{
+  "name": "gamesquare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Reinaldo Oliveira",
+  "license": "MIT",
+  "scripts": {
+    "typescript": "tsc --watch",
+    "sass": "sass ./src/assets/scss:./src/assets/css --watch",
+    "dev": "concurrently \"yarn typescript\" \"yarn sass\""
+  },
+  "devDependencies": {
+    "sass": "^1.34.0",
+    "typescript": "^4.3.2",
+    "concurrently": "^6.2.0"
+  }
+}
