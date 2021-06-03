@@ -8,6 +8,7 @@
     width: 200px;
     height: 200px;
     background-color: violet;
+    z-index: 2;
 }
 
 #top {
@@ -20,7 +21,7 @@
     border-left: 100px solid var(--red);
 }
 
-#botton {
+#bottom {
     @include triangle();
     border-top: 100px solid var(--green);
 }
