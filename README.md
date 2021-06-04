@@ -1,2 +1,2 @@
 # Game Square
-Creating a game with HTML, CSS and JS 
+https://reinaldo26.github.io/game-square/src/
