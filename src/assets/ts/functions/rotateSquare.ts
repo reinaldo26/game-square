@@ -1,9 +1,12 @@
+import { audioRotate } from "../audio/index.js";
+import audioPlay from "./audioPlay.js";
 import colors from "./colors.js";
 import { 
     squareElement 
 } from "./elements.js";
 
 export default function rotateSquare(directionRight = true) {
+    audioPlay(audioRotate);
     const square = squareElement();
     let color = Number(square.dataset.color);
     let rotate = Number(square.dataset.rotate);
