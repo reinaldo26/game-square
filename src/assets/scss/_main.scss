@@ -22,9 +22,10 @@ body {
     font-family: sans-serif;
 }
 
-#logo {
+#author {
     position: fixed;
     bottom: 1vw;
     right: 1vw;
     z-index: 4;
+    color: var(--green);
 }

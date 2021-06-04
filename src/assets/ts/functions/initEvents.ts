@@ -5,9 +5,12 @@ import {
 
 import rotateSquare from "./rotateSquare.js";
 
-export default function initEvents() {
+export default function initEvents(playGame: () => void) {
     buttonElement().addEventListener("click", () => {
         startScreenElement().style.display = "none";
+        if (typeof playGame === 'function') {
+            playGame();
+        }
     });
 
     document.body.addEventListener("click", () => {
