@@ -10,8 +10,7 @@ import rotateSquare from "./rotateSquare.js";
 export default function initEvents(playGame: () => void) {
     buttonElement().addEventListener("click", () => {
         startScreenElement().style.display = "none";
-
-       audioPlay(audioMusic);
+        audioPlay(audioMusic);
 
         if (typeof playGame === 'function') {
             playGame();
