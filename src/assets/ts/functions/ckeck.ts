@@ -11,7 +11,6 @@ export default function check() {
         audioPlay(audioPoint);
         return true;
     } else {
-        setScore(0);
         startScreenElement().style.display = 'flex';
         audioPlay(audioFail);
         audioMusic.pause();
